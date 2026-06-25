@@ -15,7 +15,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://finance-tracker-frontend-sable.vercel.app'],
+    origin: ['http://localhost:3000', 'https://fintracker-v1.vercel.app'],
     credentials: true
   })
 )
