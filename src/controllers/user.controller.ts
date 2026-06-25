@@ -23,7 +23,7 @@ export const updateProfile = async (req: Request, res: Response) => {
     let updateData: any = { name, email }
 
     if (req.file) {
-      updateData.avatarURL = `/uploads/${req.file.filename}`
+      updateData.avatarURL = req.file.path
     }
 
     const updatedUser = await prisma.user.update({
